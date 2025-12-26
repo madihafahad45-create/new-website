@@ -1,40 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Traveler</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    #header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-</style>
-<body>
-    <div id="header">
-        <div class="logo">
-            <h1>Muhammad fahad </h1>
-        </div>
-        <div class="mainmenu">
-            <nav>
-                <a href="index.html"> Home</a>
-                <a href="index.html"> about</a>
-                <a href="index.html"> content</a>
-                <a href="index.html"> gallary</a>
-            </nav>
-        </div>
-    </div>
-    <section class="herosection">
-        <div class="heroheading">
-            <h2>My Awsome website store</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores deleniti cupiditate nesciunt a ex incidunt suscipit? Aperiam, recusandae provident quis alias quam, ipsam, inventore atque saepe exercitationem temporibus dicta.</P>
-            <input type="search">
-            <button>enter</button>
-        </div>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
+    body {
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+        background: #fff;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .hero {
+        height: 90vh;
+        background: url(images/hero.jpg) center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        text-align: center;
+    }
+
+    .hero button {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #f9c74f;
+        border: none;
+        cursor: pointer;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        background: #3d7c5c;
+        color: #fff;
+        padding: 30px;
+    }
+
+    .section {
+        padding: 60px 80px;
+    }
+
+    .section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h4 {
+        margin-top: 10px;
+    }
+
+    .split {
+        display: flex;
+        padding: 60px 80px;
+        gap: 40px;
+    }
+
+    .split img {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .split-text {
+        width: 50%;
+    }
+
+    .video {
+        text-align: center;
+        padding: 80px;
+    }
+
+    .video-box {
+        width: 300px;
+        height: 180px;
+        background: #000;
+        color: #fff;
+        margin: auto;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .guides {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .guide img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .light {
+        background: #f7f1ea;
+    }
+
+    .faq {
+        padding: 60px 80px;
+    }
+
+    details {
+        margin-bottom: 15px;
+    }
+
+    .cta {
+        background: #3d7c5c;
+        color: #fff;
+        text-align: center;
+        padding: 60px;
+    }
+
+    .cta button {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background: #f9c74f;
+        border: none;
+    }
+
+    footer {
+        background: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h2 class="logo">Traveler</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Guides</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>See the world like a local</h1>
+            <p>Discover amazing places with local guides</p>
+            <button>Explore Now</button>
+        </div>
     </section>
 
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature">✔ Best local guides</div>
+        <div class="feature">✔ Handpicked destinations</div>
+        <div class="feature">✔ Affordable pricing</div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="section">
+        <h2>Popular destinations</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/img1.jpg">
+                <h4>Barcelona</h4>
+                <p>Spain</p>
+            </div>
+            <div class="card">
+                <img src="images/img2.jpg">
+                <h4>Dubai</h4>
+                <p>UAE</p>
+            </div>
+            <div class="card">
+                <img src="images/img3.jpg">
+                <h4>Tokyo</h4>
+                <p>Japan</p>
+            </div>
+            <div class="card">
+                <img src="images/img4.jpg">
+                <h4>New York</h4>
+                <p>USA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE + TEXT -->
+    <section class="split">
+        <img src="images/travel.jpg">
+        <div class="split-text">
+            <h2>Exceptional travel experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="video">
+        <h2>Spotlight destinations</h2>
+        <div class="video-box">▶</div>
+    </section>
+
+    <!-- GUIDES -->
+    <section class="section">
+        <h2>Meet our guides</h2>
+        <div class="guides">
+            <div class="guide">
+                <img src="images/guide1.jpg">
+                <h4>John Doe</h4>
+            </div>
+            <div class="guide">
+                <img src="images/guide2.jpg">
+                <h4>Sarah Lee</h4>
+            </div>
+            <div class="guide">
+                <img src="images/guide3.jpg">
+                <h4>Ali Khan</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section light">
+        <h2>Understand your customers</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/blog1.jpg">
+                <h4>Travel Tips</h4>
+            </div>
+            <div class="card">
+                <img src="images/blog2.jpg">
+                <h4>Local Food</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently asked questions</h2>
+        <details>
+            <summary>How do I book?</summary>
+            <p>Choose destination and book instantly.</p>
+        </details>
+        <details>
+            <summary>Are guides verified?</summary>
+            <p>Yes, all guides are verified.</p>
+        </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Find a local guide now</h2>
+        <button>Get Started</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Traveler. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
