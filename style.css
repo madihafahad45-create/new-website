@@ -17,20 +17,15 @@
 }
 .content {
     position: absolute;
-
     top: 22%;
-    margin-left: 17%;
+    margin-left: 20%;
     justify-content: center;
-    margin: auto;
     display: flex;
     z-index: 2;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 100%;
-
     top:6%  ;
-    margin-left: 50%;
     
 
 }
@@ -121,7 +116,7 @@ div#header {
 .feature {
     justify-content: center;
     content: size 10px;
-    width: 39%;
+    width: 69%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -781,18 +776,19 @@ p#logo-p {
 }
 .container10{
     background-color:  #e8ded5;
+    padding: 100px;
 }
 
 h1 {
     font-size: 57px;
-    margin-top: 60px;
+    
 }
 .contentx {
     
     font-size: larger;
     width: 39%;
     margin-top: 187px;
-    margin-left: 260px;
+    
 }
 
 
