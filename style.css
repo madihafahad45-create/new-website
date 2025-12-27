@@ -17,6 +17,7 @@
 }
 .content {
     position: absolute;
+
     top: 22%;
     margin-left: 17%;
     justify-content: center;
@@ -27,6 +28,11 @@
     align-items: center;
     align-content: center;
     width: 100%;
+
+    top:6%  ;
+    margin-left: 50%;
+    
+
 }
 div#header{
     display: flex;
@@ -765,7 +771,7 @@ p.smal {
     font-size: 19px;
     font-weight: 700;
 }
-p#logo-p {Z
+p#logo-p {
     width: 40%;
     FONT-SIZE: 19PX;
     MARGIN-LEFT: 85PX;
